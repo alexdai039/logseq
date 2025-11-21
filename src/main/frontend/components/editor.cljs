@@ -468,6 +468,7 @@
    [:input
     {:id        "upload-file"
      :type      "file"
+     :multiple  true
      :on-change (fn [e]
                   (let [files (.-files (.-target e))]
                     (editor-handler/upload-asset id files format editor-handler/*asset-uploading? false)))

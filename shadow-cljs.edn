@@ -54,8 +54,7 @@
         :devtools {:before-load frontend.core/stop          ;; before live-reloading any code call this function
                    :after-load frontend.core/start          ;; after live-reloading finishes call this function
                    :watch-path "/static"
-                   :preloads [devtools.preload
-                              shadow.remote.runtime.cljs.browser]}}
+                   :preloads [devtools.preload]}}
 
   :electron {:target :node-script
              :output-to "static/electron.js"
